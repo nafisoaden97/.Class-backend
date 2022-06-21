@@ -5,25 +5,28 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app.js",
-      "dev": "nodemon app.js"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "createProfilesTable": "node -r dotenv/config ./db/peopleTable/create.js",
+        "populateProfilesTable": "node -r dotenv/config ./db/peopleTable/populate.js"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "express": "^4.17.1"
+        "dotenv": "^16.0.1",
+        "express": "^4.17.1",
+        "pg": "^8.7.3"
     },
     "devDependencies": {
-      "nodemon": "^2.0.2"
+        "nodemon": "^2.0.2"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber.git"
+        "type": "git",
+        "url": "git+https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber.git"
     },
     "bugs": {
-      "url": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber/issues"
+        "url": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber/issues"
     },
     "homepage": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber#readme"
-  }
-  
+}
