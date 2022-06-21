@@ -11,7 +11,7 @@
         "createProfilesTable": "node -r dotenv/config ./db/peopleTable/create.js",
         "populateProfilesTable": "node -r dotenv/config ./db/peopleTable/populate.js",
         "dropProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js",
-        "resetProfilesTable": "node -r dotenv/config ./db/peopleTable/reset.js"
+        "resetProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js & node -r dotenv/config ./db/peopleTable/create.js & node -r dotenv/config ./db/peopleTable/populate.js"
     },
     "author": "",
     "license": "ISC",
