@@ -2,7 +2,6 @@ import express from "express";
 import {getProfiles, getProfilesByRegion, getProfilesByName, getProfilesByBootcamp} from "../models/profiles.js"
 const router = express.Router();
 
-
 router.get("/", async function (req, res) {
     if (req.query.region !== undefined) {
         const result = await getProfilesByRegion(req.query.region);
