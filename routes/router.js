@@ -9,8 +9,9 @@ router.get("/", async function (req, res) {
     } else if(req.query.name){
         const result = await getProfilesByName(req.query.name);
         return res.json({ success: true, payload: result })
-    } else if(req.query.bootcampNumber){
-        const result = await getProfilesByBootcamp(req.query.bootcampNumber);
+    } else if(req.query.Bootcampnumber){
+        const setToNum = req.query.Bootcampnumber*1;
+        const result = await getProfilesByBootcamp(setToNum);
         return res.json({ success: true, payload: result })
     } else {
         let response = await getProfiles();
