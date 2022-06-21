@@ -1,10 +1,10 @@
 Back-end plan Tuesday
 
-# Mock database in libs folder - an object containing all the categories we want right now
+# Mock database in libs folder - an object containing all the categories we want right now --DONE--
 
  - Id, Name, Region, Job Title, Pronouns, Image Link, Contact Info, Links
 
-# Do our database intiation SQL things like create and populate, using the data from our libs to test
+# Do our database intiation SQL things like create and populate, using the data from our libs to test --DONE--
 
 # Import the environment variables into db/index.js and link up with our data?
 
