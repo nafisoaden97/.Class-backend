@@ -9,12 +9,33 @@ async function getProfiles() {
 }
 
 
+/*
 router.get("/", async function (req, res) {
     let response = await getProfiles();
     res.json({success: true, payload: response});
 });
+*/
 
-/* async function getProfilesByName(name) {
+async function getProfilesByRegion(region) {
+    const response = await pool.query(`SELECT * FROM profiles WHERE Region LIKE $1`, [region]);
+    return response.rows;
+}
+
+router.get("/", async function (req, res) {
+    if (req.query.region !== undefined) {
+        const result = await getProfilesByRegion(req.query.region);
+        return res.json({ success: true, payload: result })
+    } else {
+        let response = await getProfiles();
+        res.json({success: true, payload: response});
+    }
+});
+
+
+export default router;
+
+
+/*async function getProfilesByName(name) {
     const response = await pool.query(`SELECT * FROM profiles WHERE LOWER(name)= LOWER(${name});`);
     return response.rows;
 }
@@ -24,20 +45,6 @@ router.get("/", function (req, res) {
     console.log(req.body);
     payload = getProfilesByName(searchTerm)
     res.json({ success: true, payload: payload });
-});
-
-export default router; */
-
-router.get("/", function (req, res) {
-    let searchTerm = req.query.name.toLowerCase();
-    console.log(req.query.region);
-    payload = getProfilesByRegion(searchTerm)
-    res.json({ success: true, payload: payload });
-});
-async function getProfilesByRegion(region) {
-    const response = await pool.query(`SELECT * FROM profiles WHERE LOWER(region)= LOWER(${region});`);
-    return response.rows;
-}
+});*/
 
 
-export default router;
