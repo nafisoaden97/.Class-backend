@@ -9,10 +9,11 @@ Back-end plan Tuesday
 # Import the environment variables into db/index.js and link up with our data?
 
 # Route functions - start with get all for now, and only after, migrate this to the models section
-    - created a get function to get all profiles
-    - create a get function that gets by region
-    - get function that gtes by bootcamp number
-    - gets by searched name
+    - created a get function to get all profiles X
+    - create a get function that gets by region X
+    - get function that gtes by bootcamp number X 
+        - will need to re-create the table since we forgot to add bootcamp number
+    - gets by searched name X
 
 # Look into encryption and information safety to incorporate
 
