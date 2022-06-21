@@ -9,7 +9,9 @@
         "start": "node app.js",
         "dev": "nodemon app.js",
         "createProfilesTable": "node -r dotenv/config ./db/peopleTable/create.js",
-        "populateProfilesTable": "node -r dotenv/config ./db/peopleTable/populate.js"
+        "populateProfilesTable": "node -r dotenv/config ./db/peopleTable/populate.js",
+        "dropProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js",
+        "resetProfilesTable": "node -r dotenv/config ./db/peopleTable/reset.js"
     },
     "author": "",
     "license": "ISC",

@@ -17,7 +17,7 @@ router.get("/", async function (req, res) {
 */
 
 async function getProfilesByRegion(region) {
-    const response = await pool.query(`SELECT * FROM profiles WHERE Region LIKE $1`, [region]);
+    const response = await pool.query(`SELECT * FROM profiles WHERE Region LIKE % $1 %`, [region]);
     return response.rows;
 }
 
