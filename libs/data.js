@@ -1,4 +1,4 @@
-const profile = [
+export const profile = [
     {
         id: 1,
         bootcampNumber: 12,
