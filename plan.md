@@ -6,17 +6,24 @@ Back-end plan Tuesday
 
 # Do our database intiation SQL things like create and populate, using the data from our libs to test --DONE--
 
-# Import the environment variables into db/index.js and link up with our data?
+# Import the environment variables into db/index.js and link up with our data? --DONE--
 
-# Route functions - start with get all for now, and only after, migrate this to the models section
+# Route functions - start with get all for now, and only after, migrate this to the models section --DONE--
     - created a get function to get all profiles X
     - create a get function that gets by region X
     - get function that gtes by bootcamp number X 
         - will need to re-create the table since we forgot to add bootcamp number
     - gets by searched name X
 
-# Look into encryption and information safety to incorporate
+# Look into encryption and information safety to incorporate --In Progress-- still need to perfect
 
-# Finally get a mock client in our app.js
+# Finally get a mock client in our app.js --DONE-
 
-# Make formal unit tests
+# Make formal unit tests --IN Progress
+
+Back-end plan Wednesday 
+
+# Work on making the search functions (req.query.params) not be case sensitive --DONE--
+
+# Continue making some tests
+

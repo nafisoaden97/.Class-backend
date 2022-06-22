@@ -25,7 +25,7 @@ const profile = [
         name: "Nafiso Aden",
         region: "West Midlands",
         jobTitle: "Bootcamper",
-        pronouns: "----",
+        pronouns: "she/her",
         imageLink: "placeholder",
         contactInfo: "placeholder"
     },
