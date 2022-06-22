@@ -1,7 +1,9 @@
 import express from "express";
 import router from "./routes/router.js";
+ import cors from "cors";
 const app = express();
 const PORT = process.env.port || 9000;
+
 
 app.get("/", function (req, res) {
     res.json({
@@ -9,7 +11,7 @@ app.get("/", function (req, res) {
       message: "Test working",
     });
   });
-  
+  app.use(cors());
   app.use(express.json());
   app.use("/profiles", router);
   
