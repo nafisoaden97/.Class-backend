@@ -25,7 +25,7 @@ export const profile = [
         name: "Nafiso Aden",
         region: "West Midlands",
         jobTitle: "Bootcamper",
-        pronouns: "----",
+        pronouns: "she/her",
         imageLink: "placeholder",
         contactInfo: "placeholder"
     },
@@ -35,7 +35,7 @@ export const profile = [
         name: "Madison Lowe",
         region: "Yorkshire",
         jobTitle: "Bootcamper",
-        pronouns: "----",
+        pronouns: "placeholder",
         imageLink: "placeholder",
         contactInfo: "placeholder"
     }

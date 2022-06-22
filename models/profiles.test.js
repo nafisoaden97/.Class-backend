@@ -1,18 +1,24 @@
 import { test, expect, describe } from "@jest/globals";
-import { getProfiles, getProfilesByRegion, getProfilesByName, getProfilesByBootcamp } from "./profiles.js";
-import { profile as initialData } from '../libs/data.js';
-import { createProfilesTable } from '../db/peopleTable/create.js';
-import { populateProfilesTable } from '../db/peopleTable/populate.js';
-import { dropProfilesTable } from '../db/peopleTable/drop.js';
-
+import {getProfiles} from "./profiles.js";
 
 describe("GET function tests", () => {
-  test("The get all function returns all entries", async () => {
-   // dropProfilesTable();
-    //createProfilesTable();
-    //populateProfilesTable();
-    const allProfiles = await getProfiles();
-    const expected = initialData
-    expect(allProfiles).toStrictEqual(expected);
+  test("Check the structure of the return", async () => {
+    //ARRANGE
+    const actual = await getProfiles()
+    //ACT
+    const expected = expect.objectContaining([
+      {
+        id: expect.any(Number),
+        bootcampNumber: expect.any(Number),
+        name: expect.any(String),
+        region: expect.any(String),
+        jobTitle: expect.any(String),
+        pronouns: expect.any(String),
+        imageLink: expect.any(String),
+        contactInfo: expect.any(String)
+      }
+    ])
+    //ASSERT
+    expect(actual).toBe(expected);
   });
 });
