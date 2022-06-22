@@ -1,4 +1,4 @@
-const profile = [
+export const profile = [
     {
         id: 1,
         bootcampNumber: 12,
@@ -35,7 +35,7 @@ const profile = [
         name: "Madison Lowe",
         region: "Yorkshire",
         jobTitle: "Bootcamper",
-        pronouns: "----",
+        pronouns: "placeholder",
         imageLink: "placeholder",
         contactInfo: "placeholder"
     }
