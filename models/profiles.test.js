@@ -2,7 +2,7 @@ import { test, expect, describe } from "@jest/globals";
 import {getProfiles} from "./profiles.js";
 
 describe("GET function tests", () => {
-  test("Check the structure of the return", async () => {
+  test("Check the structure of the payload, when sent a GET request for All profiles", async () => {
     //ARRANGE
     const actual = await getProfiles()
     //ACT
@@ -23,4 +23,9 @@ describe("GET function tests", () => {
     //ASSERT
     expect(actual).toEqual(expected);
   });
+
+
+
+
+
 });
