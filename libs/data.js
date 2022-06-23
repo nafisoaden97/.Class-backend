@@ -7,7 +7,7 @@ export const profile = [
         jobTitle: "Bootcamper",
         description: "Putting together a hackathon team, see full bio for more details!",
         pronouns: "he/him",
-        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860501704470618/freepik3b.jpg",
+        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860503642243092/freepik4d.jpg",
         contactInfo: "samwylie@gmail.com"
     },
     {
@@ -40,7 +40,7 @@ export const profile = [
         jobTitle: "Bootcamper",
         pronouns: "she/her",
         description: "Open to work! See page for GitHub and portfolio.",
-        imageLink: "https://cdn.discordapp.com/attachments/988860447098810369/988860503348617357/freepik4c.jpg",
+        imageLink: "https://cdn.discordapp.com/attachments/988860447098810369/988860655853510656/freepik3f.jpg",
         contactInfo: "madisonLowe@outlook.co.uk"
     },{
         id: 5,
@@ -50,7 +50,7 @@ export const profile = [
         jobTitle: "Back-End DevOps",
         description: "Roses are red, violets are blue, unexpected '{' on line 32.",
         pronouns: "he/him",
-        imageLink: "https://cdn.discordapp.com/attachments/988860447098810369/988860501704470618/freepik3b.jpg",
+        imageLink: "https://cdn.discordapp.com/attachments/988860447098810369/988860503642243092/freepik4d.jpg",
         contactInfo: "jim84@hotmail.com"
 
     },
@@ -114,7 +114,7 @@ export const profile = [
         jobTitle: "Back-End ",
         pronouns: "her/she",
         description: "I believe in the great power of technology!",
-        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860502765617202/freepik4a.jpg",
+        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860502488797224/freepik3e.jpg",
         contactInfo: "samantha-james1@hotmail.co.uk"
     },{
         id: 1,
@@ -124,7 +124,7 @@ export const profile = [
         jobTitle: "Senior Developers",
         description: "Code is nothing but the true power of technology!",
         pronouns: "he/him",
-        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860501704470618/freepik3b.jpg",
+        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860503642243092/freepik4d.jpg",
         contactInfo: "Jack77@gmail.com"
     }
 
