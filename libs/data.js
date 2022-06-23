@@ -67,8 +67,8 @@ export const profile = [
     },
     {   id: 7,
         bootcampNumber: 3,
-        name: "liz Koufman",
-        region: "East Midland",
+        name: "liz Kaufman",
+        region: "East Midlands",
         jobTitle: "Coach at School of Code",
         pronouns: "she/her",
         description: "Available for Tea chats! Slow with email, quicker via PM.",
@@ -79,7 +79,7 @@ export const profile = [
     {   id: 8,
         bootcampNumber: 1,
         name: "Chris Meah",
-        region: "West Midland",
+        region: "West Midlands",
         jobTitle: "CEO of School of Code",
         pronouns: "he/him",
         description: "I'd rate my programming puns C++.",
@@ -106,6 +106,16 @@ export const profile = [
         description: "Why do Java programmers have to wear glasses? They don't C#.",
         imageLink: "https://cdn.discordapp.com/attachments/988860447098810369/988860503935827978/freepik4e.jpg",
         contactInfo: "sara-nader@hotmail.co.uk"
+    },
+    {   id: 11,
+        bootcampNumber: 5,
+        name: " Samantha James",
+        region: "South East",
+        jobTitle: "Back-End ",
+        pronouns: "her/she",
+        description: "I believe in the great power of technology!",
+        imageLink:"https://cdn.discordapp.com/attachments/988860447098810369/988860502765617202/freepik4a.jpg",
+        contactInfo: "samantha-james1@hotmail.co.uk"
     },
 
 ]
