@@ -19,7 +19,7 @@ export async function getProfilesByName(name) {
     return response.rows;
 }
 
-export async function getProfilesByBootcamp(bootcampNumber) {
+export async function getProfilesByBootcampNumber(bootcampNumber) {
     const response = await pool.query(`SELECT * FROM profiles WHERE bootcampNumber= $1`, [bootcampNumber]);
     return response.rows;
 }

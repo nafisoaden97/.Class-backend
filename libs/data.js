@@ -1,4 +1,4 @@
-export const profile = [
+const profiles = [
     {
         id: 1,
         bootcampNumber: 12,
@@ -130,4 +130,4 @@ export const profile = [
 
 ]
 
-export default profile;
+export default profiles;
