@@ -1,8 +1,16 @@
 import express from "express";
 import router from "./routes/router.js";
+import dotenv from "dotenv";
 import cors from "cors";
-const app = express();
+
+dotenv.config();
 const PORT = process.env.PGPORT || 9000;
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+app.use("/profiles", router);
 
 app.get("/", function (req, res) {
   res.json({
@@ -10,9 +18,6 @@ app.get("/", function (req, res) {
     message: `Test working ${PORT}`,
   });
 });
-app.use(cors());
-app.use(express.json());
-app.use("/profiles", router);
 
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
