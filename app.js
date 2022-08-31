@@ -7,7 +7,7 @@ const PORT = process.env.PGPORT || 9000;
 app.get("/", function (req, res) {
   res.json({
     success: true,
-    message: "Test working",
+    message: `Test working ${PORT}`,
   });
 });
 app.use(cors());
