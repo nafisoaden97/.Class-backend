@@ -2,7 +2,7 @@ import express from "express";
 import router from "./routes/router.js";
 import cors from "cors";
 const app = express();
-const PORT = process.env.PGPORT || 9000;
+const PORT = process.env.PGPORT;
 
 app.get("/", function (req, res) {
   res.json({
