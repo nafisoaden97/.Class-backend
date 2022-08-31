@@ -1,37 +1,38 @@
 {
-  "name": "yearbook-server",
-  "version": "1.0.0",
-  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7891664&assignment_repo_type=AssignmentRepo)\r <h1 align=\"center\">\r   Week 4 - Recap\r </h1>",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "createProfilesTable": "node -r dotenv/config ./db/peopleTable/create.js",
-    "populateProfilesTable": "node -r dotenv/config ./db/peopleTable/populate.js",
-    "dropProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js",
-    "resetProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js & node -r dotenv/config ./db/peopleTable/create.js & node -r dotenv/config ./db/peopleTable/populate.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.17.1",
-    "jest": "^28.1.1",
-    "pg": "^8.7.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.2",
-    "supertest": "^6.2.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber.git"
-  },
-  "bugs": {
-    "url": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber/issues"
-  },
-  "homepage": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber#readme"
+    "name": "yearbook-server",
+    "version": "1.0.0",
+    "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7891664&assignment_repo_type=AssignmentRepo)\r <h1 align=\"center\">\r   Week 4 - Recap\r </h1>",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "createProfilesTable": "node -r dotenv/config ./db/peopleTable/create.js",
+        "populateProfilesTable": "node -r dotenv/config ./db/peopleTable/populate.js",
+        "dropProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js",
+        "resetProfilesTable": "node -r dotenv/config ./db/peopleTable/drop.js & node -r dotenv/config ./db/peopleTable/create.js & node -r dotenv/config ./db/peopleTable/populate.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.17.1",
+        "jest": "^28.1.1",
+        "pg": "^8.7.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2",
+        "supertest": "^6.2.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber.git"
+    },
+    "bugs": {
+        "url": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber/issues"
+    },
+    "homepage": "https://github.com/SchoolOfCode/w4_recap-tasks-samsonhumber#readme"
 }
