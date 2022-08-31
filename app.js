@@ -1,6 +1,6 @@
 import express from "express";
 import router from "./routes/router.js";
-import cors from "cors";
+// import cors from "cors";
 const app = express();
 const PORT = process.env.PGPORT || 9000;
 
